@@ -16,20 +16,20 @@ B[5,2] = 1
 
 d_system = cont2discrete((A, B, C, D), dt, 'euler')
 print('Euler\n')
-print('dA =', d_system[0])
-print('dB =', d_system[1])
+print('dA =\n', d_system[0])
+print('dB =\n', d_system[1])
 
 d_system = cont2discrete((A, B, C, D), dt, 'zoh')
 print('zoh\n')
-print('dA =', d_system[0])
-print('dB =', d_system[1])
+print('dA =\n', d_system[0])
+print('dB =\n', d_system[1])
 
 d_system = cont2discrete((A, B, C, D), dt, 'backward_diff')
 print('backward_diff\n')
-print('dA =', d_system[0])
-print('dB =', d_system[1])
+print('dA =\n', d_system[0])
+print('dB =\n', d_system[1])
 
 d_system = cont2discrete((A, B, C, D), dt, 'bilinear')
 print('bilinear\n')
-print('dA =', d_system[0])
-print('dB =', d_system[1])
+print('dA =\n', d_system[0])
+print('dB =\n', d_system[1])
