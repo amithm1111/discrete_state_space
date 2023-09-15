@@ -7,12 +7,12 @@ B = np.zeros((6,3))
 C = np.zeros((6,6)) 
 D = np.zeros((6,3))
 
-A[0,4] = 1
-A[1,5] = 1
-A[2,6] = 1
-B[3,1] = 1
-B[4,2] = 1
-B[5,3] = 1
+A[0,3] = 1
+A[1,4] = 1
+A[2,5] = 1
+B[3,0] = 1
+B[4,1] = 1
+B[5,2] = 1
 
 d_system = cont2discrete((A, B, C, D), dt, 'euler')
 print('Euler\n')
